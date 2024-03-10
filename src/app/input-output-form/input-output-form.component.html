@@ -1,0 +1,11 @@
+<div>
+  <!-- Formulario simple con ngModel -->
+  <label for="dataInput">Datos:</label>
+  <input id="dataInput" [(ngModel)]="formData" (ngModelChange)="onFormChange()" />
+
+  <!-- Mostrar datos iniciales recibidos mediante @Input -->
+  <p>Datos iniciales recibidos: {{ initialData }}</p>
+
+  <!-- Emitir datos modificados mediante @Output -->
+  <p>Datos modificados: {{ formData }}</p>
+</div>

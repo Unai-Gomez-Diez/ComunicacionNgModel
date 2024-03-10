@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ngModelIO';
+  initialData = 'Initial Data from Parent';
+  modifiedDataFromChild = '';
+
+  handleModifiedData(data: string) {
+    this.modifiedDataFromChild = data;
+  }
 }
